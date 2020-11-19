@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>My Work Log</h1>
+    <form class="form" data-content="addWorkForm">
+      <!-- project selection -->
+      <div class="form__group">
+        <span>Project:</span>
+        <select data-content="projectSelect"></select>
+      </div>
+
+      <!-- work description -->
+      <div class="form__group">
+        <span>Work description:</span>
+        <input type="text" data-content="workDescription" />
+        <span>(at least 5 characters)</span>
+      </div>
+
+      <!-- minutes -->
+      <div class="form__group">
+        <span>Minutes:</span>
+        <input type="number" min="0" max="600" data-content="workTime" />
+        <span>(0-600)</span>
+      </div>
+
+      <button type="submit" data-action="addWorkBtn">Submit</button>
+    </form>
+
+    <hr />
+
+    <p class="total-time" data-content="totalTime">0:03</p>
+
+    <hr />
+
+    <ul class="project-list" data-content="projectList">
+      <li class="project-list__item">
+        <div class="project">
+          <p class="project__time">0:05</p>
+          <h3 class="project__title">title</h3>
+          <ul class="project__work-list">
+            <li class="project__work">
+              <span class="project__work-time">22:00</span>
+              <span class="project__work-desc">Hell world</span>
+            </li>
+            <li class="project__work">
+              <span class="project__work-time">22:00</span>
+              <span class="project__work-desc">Hell world</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="project-list__item">
+        <div class="project">
+          <p class="project__time">0:05</p>
+          <h3 class="project__title">title</h3>
+          <ul class="project__work-list">
+            <li class="project__work">
+              <span class="project__work-time">22:00</span>
+              <span class="project__work-desc">Hell world</span>
+            </li>
+            <li class="project__work">
+              <span class="project__work-time">22:00</span>
+              <span class="project__work-desc">Hell world</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

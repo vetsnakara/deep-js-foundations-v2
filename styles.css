@@ -1,0 +1,84 @@
+/* common */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+select,
+input,
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* total time */
+
+.total-time {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* form */
+
+.form__group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__group > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* project list */
+
+.project-list {
+  display: flex;
+}
+
+.project-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* project */
+
+.project {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.project__title {
+  margin: 0 0 15px;
+  font-size: 25px;
+}
+
+.project__time {
+  font-weight: bold;
+  text-align: right;
+  font-size: 20px;
+}
+
+.project__work:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.project__work-time {
+  font-weight: bold;
+  margin-right: 20px;
+}
